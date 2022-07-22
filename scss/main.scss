@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@400;600&display=swap");
+$main-color: #082d41;
+$secondary-color: #ba9778;
+$light-color: #f6f3ec;
+$white: #ffffff;
+
+body {
+	font-family: "Raleway", sans-serif;
+	color: $main-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+	margin-bottom: 2rem;
+}
+
+//Globals
+.btn-light {
+	background-color: $light-color;
+	color: $main-color;
+	border: none;
+	border-radius: 0;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $secondary-color;
+		color: $white;
+		border: none;
+	}
+}
+
+.btn-line {
+	background-color: transparent;
+	color: $light-color;
+	border: 1px solid $light-color;
+	border-radius: 0;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $light-color;
+		color: $main-color;
+		border: 1px solid $light-color;
+	}
+}
+
+.bg-main {
+	background: $main-color;
+	color: $light-color;
+	mix-blend-mode: multiply;
+}
+.bg-secondary {
+	background-color: $secondary-color;
+}
+.bg-theme-light {
+	background-color: $light-color;
+}
+
+hr {
+	color: $secondary-color;
+	max-width: 180px;
+	border-top: 2px solid;
+}
+.p-container {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+//Navbar
+.navbar {
+	background: $main-color;
+
+	a {
+		text-transform: uppercase;
+		color: $white;
+		letter-spacing: 2px;
+		font-size: 14px;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $secondary-color;
+		}
+	}
+	.nav-link.active {
+		color: $secondary-color;
+	}
+	.nav-item:last-child {
+		margin-left: 1.5rem;
+	}
+}
+
+//Hero section
+.hero-header {
+	height: 100vh;
+	background: rgb(8, 57, 73);
+	background: linear-gradient(180deg, rgba(8, 57, 73, 0.5) 0%, rgba(8, 57, 73, 0) 100%), url("/img/hero-cover.jpg") no-repeat;
+	background-size: cover;
+	padding: 4rem;
+
+	.container,
+	.row {
+		height: 100%;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.row {
+		.col-8 {
+			padding-right: 4rem;
+		}
+		h1 {
+			color: $white;
+			font-size: 4rem;
+			margin-bottom: 4rem;
+		}
+	}
+}
+
+//Footer
+.footer {
+	padding: 1.2rem 0 0.5rem;
+	text-align: center;
+	border-top: 1px solid $secondary-color;
+	p {
+		display: inline-block;
+		margin-right: 1rem;
+	}
+}

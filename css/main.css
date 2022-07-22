@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@400;600&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+  color: #082d41;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+.btn-light {
+  background-color: #f6f3ec;
+  color: #082d41;
+  border: none;
+  border-radius: 0;
+}
+.btn-light:hover, .btn-light:focus, .btn-light:active {
+  background-color: #ba9778;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-line {
+  background-color: transparent;
+  color: #f6f3ec;
+  border: 1px solid #f6f3ec;
+  border-radius: 0;
+}
+.btn-line:hover, .btn-line:focus, .btn-line:active {
+  background-color: #f6f3ec;
+  color: #082d41;
+  border: 1px solid #f6f3ec;
+}
+
+.bg-main {
+  background: #082d41;
+  color: #f6f3ec;
+  mix-blend-mode: multiply;
+}
+
+.bg-secondary {
+  background-color: #ba9778;
+}
+
+.bg-theme-light {
+  background-color: #f6f3ec;
+}
+
+hr {
+  color: #ba9778;
+  max-width: 180px;
+  border-top: 2px solid;
+}
+
+.p-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.navbar {
+  background: #082d41;
+}
+.navbar a {
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+.navbar a:hover, .navbar a:focus, .navbar a:active {
+  color: #ba9778;
+}
+.navbar .nav-link.active {
+  color: #ba9778;
+}
+.navbar .nav-item:last-child {
+  margin-left: 1.5rem;
+}
+
+.hero-header {
+  height: 100vh;
+  background: rgb(8, 57, 73);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 57, 73, 0.5)), to(rgba(8, 57, 73, 0))), url("/img/hero-cover.jpg") no-repeat;
+  background: linear-gradient(180deg, rgba(8, 57, 73, 0.5) 0%, rgba(8, 57, 73, 0) 100%), url("/img/hero-cover.jpg") no-repeat;
+  background-size: cover;
+  padding: 4rem;
+}
+.hero-header .container,
+.hero-header .row {
+  height: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.hero-header .row .col-8 {
+  padding-right: 4rem;
+}
+.hero-header .row h1 {
+  color: #ffffff;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.footer {
+  padding: 1.2rem 0 0.5rem;
+  text-align: center;
+  border-top: 1px solid #ba9778;
+}
+.footer p {
+  display: inline-block;
+  margin-right: 1rem;
+}/*# sourceMappingURL=main.css.map */
